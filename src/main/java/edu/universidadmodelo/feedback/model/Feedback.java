@@ -1,7 +1,14 @@
 package edu.universidadmodelo.feedback.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Feedback {
 
     private String id;
@@ -54,9 +61,6 @@ public class Feedback {
 
     public void setType(String type) {
         this.type = type;
-    }
-
-    public Feedback() {
     }
 
     public String getId() {
