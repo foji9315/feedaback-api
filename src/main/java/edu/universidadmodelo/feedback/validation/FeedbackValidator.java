@@ -20,6 +20,9 @@ public class FeedbackValidator {
 
     public void validate(FeedbackUpdatableData objectToValidate) {
         validateComment(objectToValidate.getComment());
+        validateLikes(objectToValidate.getLikes());
+        validateSubject(objectToValidate.getSubject());
+        validateType(Integer.parseInt(objectToValidate.getType()));
     }
 
     private static void validateComment(String comment) {
